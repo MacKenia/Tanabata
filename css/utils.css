@@ -1,0 +1,26 @@
+html, body {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+	overflow: hidden;
+}
+
+#snow {
+	float: left;
+    width: 0%;
+    height: 0%;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+
+

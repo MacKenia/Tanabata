@@ -1,0 +1,29 @@
+#code {
+    font-family: consolas;
+    overflow: auto;
+    border: 1px solid;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 16px;
+    margin: 32px;
+}
+
+.token .selector {
+    color: rgb(86,194,234);
+}
+
+.token .property {
+    color: rgb(48,170,215);
+}
+
+.token .punctuation {
+    color: rgb(241,215,0);
+}
+
+.token .function {
+    color: rgb(10,242,157);
+}
+
+.token .comment {
+    color: rgb(149,149,149);
+}

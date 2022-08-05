@@ -1,0 +1,125 @@
+/*
+* Hi。宝贝！
+* 这么久了。还没和宝贝说过我的工作呢！
+* 我是个前端工程师。俗称程序员。网页相关。
+* 如这个页面。就是个什么也没有的网页。
+* 我的工作就是给这种空白的页面加点儿东西。
+* 嗯。说起来手机和电脑还得区分一下。
+* 你现在用的是。。。电脑
+*/
+
+/* 首先给所有元素加上过渡效果 */
+* {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* 白色背景太单调了。来点背景 */
+body, html {
+    color: #fff;
+    background-color: #1c1e26;
+}
+
+/* 文字不好看 */
+#code {
+    overflow: auto;
+    border: 1px solid;
+    font-family: consolas;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 16px;
+    margin: 32px;
+}
+
+/* 这些代码颜色都一样。加点儿高亮区别来 */
+.token .selector {
+    color: rgb(86,194,234);
+}
+
+.token .property {
+    color: rgb(48,170,215);
+}
+
+.token .punctuation {
+    color: rgb(241,215,0);
+}
+
+.token .function {
+    color: rgb(10,242,157);
+}
+
+.token .comment {
+    color: rgb(149,149,149);
+}
+
+/*
+* 宝贝，今天教你写代码。
+* 用代码画一个爱心。
+*/
+
+/* 首先，来一个画板 */
+#live {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+/* 画一个方块，当左心室和右心室 */
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: -50px 0 0 -50px;
+  border-radius: 20px;
+  background: #E88D8D;
+  transform: rotate(45deg);
+}
+
+/* 画上左心房 */
+.heart::before {
+  content: '';
+  background: #E88D8D;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -36px;
+  top: -1px;
+}
+
+/* 再画上右心房 */
+.heart::after {
+  content: '';
+  background: #E88D8D;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  top: -36px;
+}
+
+/* 太单调了，让心跳动起来 */
+@keyframes throb {
+  0% {
+    transform: scale(1) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.65) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.bounce {
+    transition: all;
+    animation: throb 1s infinite ease-out;
+}
+
+/*
+* Ok，完成！
+* 宝贝，七夕快乐！
+*/
