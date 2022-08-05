@@ -15,7 +15,7 @@ $(()=>{
     }
     typing(document.getElementById("code"),css);
 
-    document.getElementById("snow").style.display = "none";
+    document.getElementById("snow").style.visibility = "hidden";
 
 })
 

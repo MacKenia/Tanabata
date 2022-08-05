@@ -320,7 +320,7 @@ function typing(dom, dat) {
             if (data[index].length == 1) {
                 dom.innerHTML += data[index];
                 document.getElementById("s").innerHTML += css_raw[counter++];
-                if (counter == css_raw.length) setTimeout(()=>{document.getElementById("snow").style.display = "block";}, 1000);
+                if (counter == css_raw.length) setTimeout(()=>{document.getElementById("snow").style.visibility = "visible";}, 1000);
                 document.getElementById("code").scrollTop+=100; // 元素自增距离顶部
             } else {
                 if (data[index].length == 7) {
