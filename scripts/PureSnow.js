@@ -80,7 +80,7 @@ function spawnSnowCSS(snow_density = 200){
     }
     
     for(let i = 1; i < snow_density; i++){
-        let random_x = Math.random() * 100; // vw
+        let random_x = Math.random() * 90; // vw
         let random_offset = random_range(-100000, 100000) * 0.0001; // vw;
         let random_x_end = random_x + random_offset;
         let random_x_end_yoyo = random_x + (random_offset / 2);

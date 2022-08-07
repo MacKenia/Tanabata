@@ -1,17 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+	/* overflow: hidden; */
+}
+
 html, body {
     width: 100%;
     height: 100%;
-
 }
 
 body {
     display: flex;
     justify-content: space-between;
-	overflow: hidden;
+}
+
+#code {
+    padding-bottom: 30px;
+}
+
+#live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #snow {
 	float: left;
+	overflow: hidden;
     width: 0%;
     height: 0%;
 }

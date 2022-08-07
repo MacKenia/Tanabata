@@ -1,10 +1,10 @@
 var css = "/*\n\
 * Hi，我的宝儿！\n\
-* 又是一个情人节到了！\n\
+* 我们在一起的第一个情人节到了！\n\
 * 我这个前端工程师又该上线了！\n\
 * 如这个页面。就是个什么也没有的网页。\n\
-* 我的工作就是给这种空白的页面加点儿东西。\n\
-* 嗯~横屏和竖屏还是要区分的\n\
+* 现在我要给这个空白的页面加点儿东西。\n\
+* 在这之前区分一下横屏还是竖屏\n\
 * 现在是";
 
 if (window.innerHeight > window.innerWidth) css += "竖屏";
@@ -69,9 +69,6 @@ css += ";\n\
 /* 首先，来一个画板 */\n\
 #live {\n\
     background-color: #fff;\n\
-    display: flex;\n\
-    justify-content: center;\n\
-    align-items: center;\n\
     margin: 32px;\n\
 }\n\
 \n\
@@ -320,8 +317,8 @@ function typing(dom, dat) {
             if (data[index].length == 1) {
                 dom.innerHTML += data[index];
                 document.getElementById("s").innerHTML += css_raw[counter++];
-                if (counter == css_raw.length) setTimeout(()=>{document.getElementById("snow").style.visibility = "visible";}, 1000);
-                document.getElementById("code").scrollTop+=100; // 元素自增距离顶部
+                if (counter == css_raw.length) setTimeout(()=>{document.getElementById("snow").style.visibility = "visible";}, 500);
+                if (data[index] == "\n") document.getElementById("code").scrollTop += document.getElementById("code").scrollHeight + 100;
             } else {
                 if (data[index].length == 7) {
                     dom = dom.parentNode;
