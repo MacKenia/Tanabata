@@ -36,7 +36,7 @@ else css += "14px";
 
 css += ";\n\
     line-height: 1.4;\n\
-    padding: 16px;\n\
+    padding: 16px 16px 30px 16px;\n\
     margin: 32px;\n\
 }\n\
 \n\

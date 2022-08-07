@@ -14,10 +14,6 @@ body {
     justify-content: space-between;
 }
 
-#code {
-    padding-bottom: 30px;
-}
-
 #live {
     display: flex;
     justify-content: center;
